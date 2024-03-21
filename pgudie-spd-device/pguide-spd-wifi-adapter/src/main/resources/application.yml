@@ -1,0 +1,33 @@
+server:
+  port: 4001
+
+
+spring:
+  application:
+    name: PGuide-spd-wifi-adapter
+
+
+pguide:
+  spd:
+    usedb: true
+    useui: false
+    centerurl: http://127.0.0.1:788/api/pguide/spd/center
+    device:
+      ip: http://127.0.0.1:4001
+      name: wifi-adapter-01
+      type: wifi
+      group: group1
+      status: healthy
+#      地名
+      place: CQMU_PGUIDE_STUDIO
+#      经纬度
+      n: 34
+      e: 54
+      retry: 3
+#      初始rfid设备设置
+    rfid:
+      host: 192.168.3.254
+      port: 8001
+      name: wifi01
+
+

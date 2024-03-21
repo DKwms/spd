@@ -1,0 +1,24 @@
+server:
+  port: 788
+
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/pguide_spd_base?rewriteBatchedStatements=true&useCursorFetch=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Shanghai
+    hikari:
+      maximum-pool-size: 100
+      minimum-idle: 10
+
+
+
+
+pguide:
+  spd:
+    wifi:
+      apipath:
+        scheduler: /api/spd/adapter/wifi/scheduler
+        command: /api/spd/adapter/wifi/command
